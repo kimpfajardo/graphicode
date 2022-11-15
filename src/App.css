@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Questrial);
+@import url(https://fonts.googleapis.com/css?family=Fira+Code);
+@import url(https://fonts.cdnfonts.com/css/space-odyssey);
+@import url(https://fonts.cdnfonts.com/css/caribantu);
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  margin: 0;
+}
+
+.inputArea {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px 15px;
+  resize: none;
+  transition: all 100ms linear;
+}
+
+.elevate {
+  transition: all 100ms linear;
+}
+
+.elevate:focus {
+  outline: none;
+  box-shadow: 1px 1px 0px blue, 2px 2px 0px blue, 3px 3px 0px blue,
+    4px 4px 0px blue, 5px 5px 0px blue, 6px 6px 0px blue, 7px 7px 0px blue,
+    8px 8px 0px blue, 9px 9px 0px blue;
+  transform: translate(-10px, -20px);
+}
+
+canvas {
+  border: none;
+}
+
+.elevate_custom {
+  transition: all 100ms linear;
+}
+
+.elevate_custom:focus {
+  outline: none;
+  transform: translate(-10px, -20px);
+}
+
+.outputArea {
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.code {
+  background-color: #282c34;
+}
+
+.code_title {
+  height: 40px;
+  padding: 0 15px;
+}
+
+.code_title_btn {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
+
+.code_title_btn:nth-child(1) {
+  background-color: #ff6480;
+}
+.code_title_btn:nth-child(2) {
+  background-color: #f9c859;
+}
+.code_title_btn:nth-child(3) {
+  background-color: #3fc56b;
+}
+
+.btn {
+  border: 1px solid black;
+  background: #000;
+}
+
+.header {
+  font-family: "Space Odyssey", sans-serif;
+  /* mix-blend-mode: screen; */
+}
+
+.banner {
+  height: 260px;
+  width: 100%;
+  transition: all 300ms linear;
+  padding: 0 20px;
+}
+
+.gray {
+  color: rgb(98, 99, 77);
+}
+
+.caribantu {
+  font-family: "Caribantu", sans-serif;
+}
+
+.option {
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.select-none {
+  user-select: none;
+}
+
+.mono {
+  font-family: "Fira Code", monospace;
+}
+
+.splashscreen {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  background-color: green;
+  transform: translate(100%, 0);
+  transition: all 600ms ease-in-out;
+  z-index: 5;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0, 0);
+  z-index: 999999;
+  position: fixed;
+}
+
+
+.link:visited {
+  color: inherit;
+}
+
+.link:hover {
+  font-weight: 800;
+}
